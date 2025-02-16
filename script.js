@@ -1,6 +1,6 @@
 const cancion = {
     _id: '1',
-    author: 'ImagineDragons',
+    author: 'Imagine Dragons',
     tittle: 'Take Me To The Beach',
     duracion:'2:47',
     audio: {
@@ -16,7 +16,7 @@ const cancion = {
 }
 
 function CrearComponenteCancion (song){
-
+    
     return song
 }
 
