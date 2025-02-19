@@ -20,7 +20,6 @@
 </head>
 
 <body>
-<div>
     <div>
         <header class="encabezado">
             <h1>Zound</h1>
@@ -36,71 +35,22 @@
         </header>
 
         <div class="union">
-            <div class="ambaslistas">
                 <div class="conteiner">
                     <h2>Tus Favoritas</h2>
-                    <ul class="playlist" id="container">
-                        <li class="song">
-                            <img src="assets/fontisto_apple-music.svg">
-                            <h3>Remember the Time</h3>
-                            <p>by Michael Jackson</p>
-                        </li>
-                        <li class="song">
-                            <img src="assets/fontisto_apple-music.svg">
-                            <h3>Bohemian Rhapsody</h3>
-                            <p>by Queen</p>
-                        </li>
-                        <li class="song">
-                            <img src="assets/fontisto_apple-music.svg">
-                            <h3>Thunder y Lighthing</h3>
-                            <p>by Bad Bunny and Eladio Carrion</p>
-                        </li>
-                        <li class="song">
-                            <img src="assets/fontisto_apple-music.svg">
-                            <h3>Si La Calle Llama - Remix</h3>
-                            <p>by Eladio Carrion, Myke Towers</p>
-                        </li>
-                    </ul>
+                    <div class="playlist" id="container">
+                    </div>
                 </div>
-                <div class="conteiner">
-                    <h2>Tendencia en Venezuela</h2>
-                    <ul class="playlist">
-                        <li class="song">
-                            <img src="assets/fontisto_apple-music.svg">
-                            <h3>DeBí TiRAR MáS FOToS</h3>
-                            <p>by Bad Bunny</p>
-                        </li>
-                        <li class="song">
-                            <img src="assets/fontisto_apple-music.svg">
-                            <h3>Mi Refe</h3>
-                            <p>by Beéle, Ovy One The Drums</p>
-                        </li>
-                        <li class="song">
-                            <img src="assets/fontisto_apple-music.svg">
-                            <h3>NUEVAYoL</h3>
-                            <p>by Bad Bunny</p>
-                        </li>
-                        <li class="song">
-                            <img src="assets/fontisto_apple-music.svg">
-                            <h3>Khé?</h3>
-                            <p>by Rauw Alejandro, Romeo Santas</p>
-                        </li>
-                    </ul>
-                </div>
-            </div>
             <div class="radio">
                 <div class="reproductor">
-                    <div class="portada">
-                    <img src="assets/img.jpg">
-                    </div>
+                    <div class="portada"><img src="assets/img.jpg" id="imagen"></div>
                     <div class="sonando">
-                        <h3>TAKE ME TO THE BEACH</h3>
-                        <p>Imagine Dragons & Ado</p>
+                        <h3 id="title">TAKE ME TO THE BEACH</h3>
+                        <p id="author">Imagine Dragons & Ado</p>
                     </div>
                     <div class="barracontrol">
                         <img src="assets/ALEATORIO.svg">
                         <img src="assets/ANTERIOR.svg">
-                        <img src="assets/STOP.svg">
+                        <img src="assets/STOP.svg" id="stop">
                         <img src="assets/SIGUIENTE.svg">
                         <img src="assets/REPETIR.svg">
                     </div>
@@ -108,8 +58,9 @@
             </div>
         </div>
     </div>
-</div>
-    
+
+<audio src="" autoplay id="audio"></audio>
+
 <script src="script.js"></script>
 </body>
 </html>

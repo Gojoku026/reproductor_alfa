@@ -57,17 +57,10 @@ body {
 .union {
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    padding: 60px
 }
 
 /*---------------------- Playlist ---------------------*/
-.ambaslistas {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    width: 50%;
-}
-
 .conteiner {
     padding: 20px;
     background-color: #fff;
@@ -78,11 +71,6 @@ body {
 .conteiner h2 {
     margin-bottom: 15px;
     color: #2D5D3E;
-}
-
-.playlist {
-    list-style-type: none;
-    padding: 0;
 }
 
 .song {
@@ -96,9 +84,10 @@ body {
 }
 
 .song img {
-    width: 32px;
-    height: 32px;
+    width:34px;
+    height:34px;
     margin-right: 15px;
+    margin-left: 15px
 }
 
 .song h3 {
@@ -133,7 +122,8 @@ body {
 }
 
 .portada img {
-    width: 100%;
+    width: 700px;
+    height: 700px;
 }
 
 .barracontrol {

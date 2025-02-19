@@ -22,10 +22,10 @@ axios.get('https://api.institutoalfa.org/api/songs')
 
 //Creo un componente cancion y la regreso 
 function CrearComponenteCancion (song){
-    const li = document.createElement('li')
-    li.setAttribute('class', 'song')
+    const div = document.createElement('div')
+    div.setAttribute('class', 'song')
 
-    li.innerHTML = `
+    div.innerHTML = `
         <img src="assets/fontisto_apple-music.svg">
         
         <div>
@@ -35,10 +35,31 @@ function CrearComponenteCancion (song){
 
     `
 
-    return li
+    div.addEventListener('click', function(){
+        console.log(song.title)
+        document.getElementById('audio')
+            .setAttribute('src', song.audio.url)
+    
+        document.getElementById('imagen')
+        .setAttribute('src', song.image.url)
+
+        document.getElementById('title').innerHTML = song.title
+
+        document.getElementById('author').innerHTML = song.author
+    })
+
+
+    return div
 }
 
+const audio = document.getElementById('audio')
 
+    document.getElementById('stop').addEventListener('click', function() {
 
-
-console.log(CrearComponenteCancion(song))
+        if(audio.paused){
+            audio.play()
+        }
+        else{
+            audio.pause()
+        }
+    })
