@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Keywords" content="Escucha musica gratuita">
+    <meta name="description" content="Tus artista y canciones favortias en un solo lugar">
+
+    <title>Repodructor Zound</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="">
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <div>
+        <header class="encabezado">
+            <h1>Zound</h1>
+            <ul class="navbar_list">
+                <li>Inicio</li>
+                <li>Tu Biblioteca</li>
+                <li>Explorar</li>
+            </ul>
+            <div class="buscador">
+                <p>Busca tu vibra...</p>
+                <img src="assets/img.svg">
+            </div>
+        </header>
+
+        <div class="union">
+            <div class="conteiner">
+                <h2>Tus Favoritas</h2>
+                <div class="playlist" id="container">
+                </div>
+            </div>
+            <div class="radio">
+                <div class="reproductor">
+                    <div class="portada"><img src="assets/img.jpg" id="imagen"></div>
+                    <div class="sonando">
+                        <h3 id="title">TAKE ME TO THE BEACH</h3>
+                        <p id="author">Imagine Dragons & Ado</p>
+                    </div>
+                    <div class="barracontrol">
+                        <img src="assets/ALEATORIO.svg">
+                        <img src="assets/ANTERIOR.svg">
+                        <img src="assets/STOP.svg" id="stop">
+                        <img src="assets/SIGUIENTE.svg">
+                        <img src="assets/REPETIR.svg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <audio src="" autoplay id="audio"></audio>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
