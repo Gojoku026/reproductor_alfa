@@ -1,0 +1,163 @@
+/* -------------------- seteo de estilos ---------------- */
+
+* {
+    /* propiedades de espaciado */
+    padding: unset;
+    margin: unset;
+    outline: unset;
+    border: unset;
+
+    /* propiedad magica */
+    box-sizing: border-box;
+}
+
+body {
+    color: #000000;
+    font-size: 16px;
+    font-family: "Inter", serif;
+    background-color: #FFFFFF;
+    font-weight: regular;
+}
+
+/*------------- Encabezado o Navbar --------------------*/
+.encabezado{
+    background-color: #EFEFEF;
+    display: flex; 
+    justify-content: space-between;  
+    padding: 5px 60px;
+    align-items: center;
+}
+
+.encabezado h1 {
+    font-size: 36px;
+    font-weight: black italic;
+    font-family:'Inter', serif;
+    color: #2D5D3E;
+}
+
+.navbar_list {
+    display: flex;
+    gap: 60px;
+    padding: 30px 29px;
+}
+
+.buscador {
+    background-color: #2D5D4E;
+    font-weight: bold;
+    color: #EFEFEF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 14px;
+    gap: 180px;
+}
+
+/*---------------------- Union de listas y reproductor ----------------------*/
+.union {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/*---------------------- Playlist ---------------------*/
+.ambaslistas {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+}
+
+.conteiner {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.conteiner h2 {
+    margin-bottom: 15px;
+    color: #2D5D3E;
+}
+
+.playlist {
+    list-style-type: none;
+    padding: 0;
+}
+
+.song {
+    display: flex;
+    align-items: center;
+    margin-bottom: 6px;
+    padding: 6px;
+    background-color: #EFEFEF;
+    border-radius: 5px;
+    gap: 15px;
+}
+
+.song img {
+    width: 32px;
+    height: 32px;
+    margin-right: 15px;
+}
+
+.song h3 {
+    margin: 0;
+    font-size: 20px;
+    color: #000000;
+    font-weight: bold;
+}
+
+.song p {
+    margin: 0;
+    font-size: 14px;
+    color: #000000;
+    font-weight: bold;
+}
+
+/*--------------------- Reproductor --------------------*/
+.radio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 15px;
+    background-color: #2D5D4E;
+    border-radius: 15px;
+}
+
+.reproductor {
+    background-color: #282828;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.portada img {
+    width: 100%;
+}
+
+.barracontrol {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #EFEFEF;
+    padding: 10px 0;
+}
+
+.sonando {
+    background-color: #d2b048;
+    color: black;
+    text-align: center;
+    padding: 20px; 
+    font-family: Arial, sans-serif; 
+}
+.sonando h3 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+.sonando p {
+    margin: 0;
+    font-size: 14px;
+    font-weight: medium;
+}
